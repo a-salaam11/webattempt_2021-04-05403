@@ -1,0 +1,78 @@
+<?php
+$server_name="localhost";
+$user_name="root";
+$password=""
+$data_base "register_table"
+ ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school web</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!--navigation details-->
+<nav>
+<img src="images/logo.jpg" alt="wait for now!">
+<div class="navigation">
+  <ul>
+  <li><a  href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="alumni.php">Alumni</a></li>
+        <li><a href="staff.html">Staff</a></li>
+          <li><a href="contact.html">Contact</a></li>
+              <li><a class="active"href="register.html">Register</a></li>
+              <li><button class="loginbtn" onclick="document.getElementById('login-form')"><a href="login.php">Login</a></button></li>
+  </ul>
+</nav>
+<!-- Home -->
+<center>
+<section id="register-home">
+  <h2>JOIN US TODAY</h2>
+  </section>
+  </center>
+<form class="" action="register.php" method="post">
+  <section id="r-form">
+<div class="form">
+  <h4>REGISTER HERE</h4>
+  <div class="form-row">
+    <input type="text" name="fname" placeholder="First Name">
+      <input type="text" name="mname" placeholder="Middle Name">
+      </div>
+      <div class="form-col">
+        <input type="text" name="Lname" placeholder="Last Name">
+      </div>
+``      <div class="form-col">
+          <input  type="email" name="Email" placeholder="Email"  required>
+      </div>
+      <div class="form-col">
+          <input type="text" name="Username" placeholder="Username">
+      </div>
+      <div class="form-col">
+          <input type="date" name="DoB" placeholder="Date of Birth">
+          <small>Date of Birth</small>
+      </div>
+      <div class="form-col">
+          <input type="tel" name="Mobnumber" placeholder="Mobile Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+          <small>Format: 123-456-7890</small>
+      </div>
+      <div class="form-col">
+          <input type="text" name="Socmedia" placeholder="Facebook,Instagram or Twitter Handle">
+      </div>
+      <div class="form-col">
+          <input type="password" min="8" name="Password" placeholder="Password">
+      </div>
+      <div class="form-col">
+        <label id="CV"><strong>Upload your CV</strong></label>  <input id="CV"type="file" min="8" name="CV" placeholder="Curriculum Vitae(CV)">
+      </div>
+      <div class="form-col">
+          <button type="submit" name="button">Submit</button>
+      </div>
+      </section>
+</form>
+  </body>
+</html>
